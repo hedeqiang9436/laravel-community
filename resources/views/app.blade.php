@@ -54,7 +54,7 @@
                         <li role="separator" class="divider"></li>
                         <li> <a href="/logout">  <i class="fa fa-sign-out"></i> 退出登录</a></li>
                     </ul>
-                    <li><img class="img-circle" width="50" src="{{Auth::user()->avatar}}"></li>
+                    <img class="img-circle" width="50" src="{{Auth::user()->avatar}}">
                 @else
                     <li><a href="/user/login">登陆</a></li>
                     <li><a href="/user/register">注册</a></li>

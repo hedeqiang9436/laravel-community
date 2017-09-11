@@ -22,7 +22,7 @@ class PostsController extends Controller
 
     public function index()
     {
-        $discussions=Discussion::all();
+        $discussions=Discussion::paginate(10);
 
         return view('forum.index',compact('discussions'));
     }
@@ -76,20 +76,17 @@ class PostsController extends Controller
             'body'=>'required',
         ],[
             'title.required'=>'请输入标题',
-            'body.required'=>'请输入文章正文'
+            'body.required'=>'请输 入文章正文'
         ]);
 
         $discussion= Discussion::findOrFail($id);
         $discussion->update($request->all());
         return redirect()->action('PostsController@show',['id'=>$discussion->id]);
     }
-
-
     public function upload()
     {
         // endaEdit 为你 public 下的目录 update 2015-05-19
         $data = EndaEditor::uploadImgFile('uploads');
-
         return json_encode($data);
     }
 }

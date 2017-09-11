@@ -78,7 +78,6 @@
             @endif
         </div>
     </div>
-
     {{--<script>--}}
         {{--Vue.http.headers.common['X-CSRF-TOKEN']=document.querySelector('#token').getAttribute('value');--}}
         {{--new Vue({--}}

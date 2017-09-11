@@ -6,8 +6,6 @@
             {{session('status')}}
         </div>
     @endif
-
-
         <!-- Main component for a primary marketing message or call to action -->
         <div class="jumbotron bg-success">
             <div class="container">
@@ -36,14 +34,17 @@
                                 回复
                                 </span>
                             </div>
-
                         </h4>
-
                         {{$discussion->user->name}}
                     </div>
                 </div>
             @endforeach
         </div>
+            <div class="col-md-9 col-md-offset-6">
+                {{ $discussions->links() }}
+            </div>
+        </div>
+
     </div>
 @stop
 
