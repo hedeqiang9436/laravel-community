@@ -1,5 +1,7 @@
 @extends('app')
-
+@section('title')
+    laravelCode
+@stop
 @section('content')
     @include('editor::head')
     <div class="container" style="margin-top: 20px;">

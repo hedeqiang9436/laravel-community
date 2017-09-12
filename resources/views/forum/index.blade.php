@@ -1,5 +1,7 @@
 @extends('app')
-
+@section('title')
+    laravelCode
+@stop
 @section('content')
     @if(Session::has('status'))
         <div class="alert alert-success navbar" role="alert" style="text-align: center">

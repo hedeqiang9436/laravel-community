@@ -1,4 +1,7 @@
 @extends('app')
+@section('title')
+    laravelCode
+@stop
 @section('content')
     <div class="container" style="margin-top: 20px;">
         <div class="row">

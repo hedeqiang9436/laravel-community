@@ -1,4 +1,7 @@
 @extends('app')
+@section('title')
+    laravelCode
+@stop
 @section('content')
     <div class="jumbotron">
         <div class="container">
