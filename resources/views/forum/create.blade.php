@@ -34,7 +34,6 @@
                     </div>
 
                     <div class="form-group{{ $errors->has('body') ? ' has-error' : '' }}">
-
                             <label for="body" class="col-md-4 control-label">内容</label>
                             <div class="col-md-8">
                                 <div class="editor">
@@ -58,7 +57,6 @@
                         </div>
                     </div>
                 </form>
-
             </div>
         </div>
     </div>
